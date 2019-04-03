@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suitter | AIを使ってTwitterを分析。よくわかる相性診断ツール</title>
+  <meta name="description" content="IBM Watsonを用いて、あなたと他の方のアカウントの性格一致度をツイートから診断します。日々の話のタネに、付き合い方のヒントに。あなたのTwitterライフをサポートします。">
+  <meta property="og:title" content="Suitter | AIを使ってTwitterを分析。よくわかる相性診断ツール">
+  <meta property="og:site_name" content="Suitter">
+  <meta property="og:description" content="IBM Watsonを用いて、あなたと他の方のアカウントの性格一致度をツイートから診断します。日々の話のタネに、付き合い方のヒントに。あなたのTwitterライフをサポートします。">
+  <meta property="og:image" content="img/about-ai.jpg">
+  <meta property="og:url" content="/">
+  <meta property="og:type" content="article">
+  <meta property="twitter:card" content="summery_large_image">
+  <?php wp_head(); ?>
+</head>
+<body>
+  <header>
+    <div class="header__left">
+      <h1 class="header__logo"><a href="front-page.html">Suitter</a></h1>
+      <ul class="header__left-nav">
+        <li><a class="nav-link" href="page-about.html">About</a></li>
+        <li><a class="nav-link" href="index.html">News</a></li>
+        <li><a class="nav-link" href="#">Q&A</a></li>
+        <li><a class="nav-link" href="#">Support</a></li>
+      </ul>
+    </div>
+    <div class="header__right">
+      <ul class="header__right-nav">
+        <li><a class="line-icon" href="#"><img src="img/line-icon.svg" alt="line"></a></li>
+        <li><a class="twitter-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="btn" href="https://matching-users-by-tweets.herokuapp.com/">今すぐ使ってみる</a></li>
+      </ul>
+    </div>
+    <div class="header__menu">
+      <div class="menu__nav-button" id="nav-button">
+        <div class="nav-button__line"></div>
+        <div class="nav-button__line"></div>
+        <div class="nav-button__line"></div>
+      </div>
+      <ul class="menu__nav">
+        <li><a href="page-about.html" class="nav-link">About</a></li>
+        <li><a href="index.html" class="nav-link">News</a></li>
+        <li><a href="#" class="nav-link">Q&A</a></li>
+        <li><a href="#" class="nav-link">Support</a></li>
+        <li>
+          <ul class="menu__share">
+            <li class="share__li"><a href="#" class="line-icon"><img src="img/line-icon.svg" alt="line"></a></li>
+            <li class="share__li"><a href="#" class="twitter-icon"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </li>
+        <li><a class="btn" href="https://matching-users-by-tweets.herokuapp.com/">今すぐ使ってみる</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__visual">
+        <div id="display">
+          <img src="img/twitter.svg" alt="トップ画像">
+          <img src="img/brain.svg" alt="トップ画像">
+          <img src="img/heart.svg" alt="トップ画像">
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__logo">Suitter</h1>
+          <p class="hero__sub">スイッター</p>
+          <p class="hero__lead">
+            ふたりのTwitterのつぶやきから、性格を分析して相性を診断。<br>
+            性格を構成する要素のうち、どの要素がどれだけ適合しているかがわかります。<br>
+            また、診断した方の性格に適合するアカウントをサジェスト。<br>
+            あなたのより良いTwitterライフをサポートします。
+          </p>
+          <a class="btn" href="https://matching-users-by-tweets.herokuapp.com/">今すぐ使ってみる</a>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-down">
+      <a class="scroll-down__btn" href="#scroll-for">Scroll</a>
+    </div>
+    <section class="howto" id="scroll-for">
+      <div class="section-head">
+        <h2 class="section-head__title">How to use</h2>
+        <p class="section-head__sub">つかいかた</p>
+      </div>
+      <section class="howto__contents">
+        <div class="contents__box">
+          <p class="box__step">step</p>
+          <p class="box__step-number">1</p>
+          <div class="box__frame">
+            <div class="box__img">
+              <img src="img/step1-img.jpg" alt="Step1 image">
+            </div>
+            <h3 class="box__title">TwitterIDを入力！</h3>
+            <p class="box__desc">
+              まずは、診断したい二人のTwitterIDを入力！<br>
+              入力したら「診断する」をタップすると解析が始まります。
+            </p>
+          </div>
+        </div>
+        <div class="contents__box">
+          <p class="box__step">step</p>
+          <p class="box__step-number">2</p>
+          <div class="box__frame">
+            <div class="box__img">
+              <img src="img/step2-img.jpg" alt="Step2 image">
+            </div>
+            <h3 class="box__title">相性がわかる！</h3>
+            <p class="box__desc">
+              お互いの性格を分析した結果がわかりやすくグラフで表示されます。<br>
+              自分と相手の性格の一致度、お互いの性格の傾向がわかります。
+            </p>
+          </div>
+        </div>
+        <div class="contents__box">
+          <p class="box__step">step</p>
+          <p class="box__step-number">3</p>
+          <div class="box__frame">
+            <div class="box__img">
+              <img src="img/step3-img.jpg" alt="Step3 image">
+            </div>
+            <h3 class="box__title">みんなにシェア！</h3>
+            <p class="box__desc">
+              結果を見たらSNSでシェアしてみましょう！<br>
+              Twitter、LINEに診断結果を画像付きでシェアすることができます。
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="about">
+      <div class="section-head">
+        <h2 class="section-head__title">About</h2>
+        <p class="section-head__sub">サービスについて</p>
+      </div>
+      <div class="about__item">
+        <h3 class="item__title">Suitterについて</h3>
+        <div class="item__title-line"></div>
+        <div class="item__desc">
+          <div class="desc__desc-wrapper">
+            <p class="desc__text">
+              Suitterは、IBM Watson Personality Insights™️を用いた相性診断システムです。<br>
+              指定した二人の性格をTwitterのツイートから分析し、その性格の一致度を分析します。
+            </p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="item__img">
+          <img src="img/about-ai.jpg" alt="AIイメージ画像">
+        </div>
+      </div>
+      <div class="about__item item--reverse">
+        <h3 class="item__title">BIG5について</h3>
+        <div class="item__title-line"></div>
+        <div class="item__desc">
+          <div class="desc__desc-wrapper">
+            <p class="desc__text">
+              Suitterは、性格の傾向を「BIG5」の値で表示します。<br>
+              「BIG5」とは人の性格を構成する要素を大きく5つに分けたもので、開放性・真面目さ・外向性・協調性・精神安定性の観点から性格を分析します。<br>
+            </p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="item__img">
+          <img src="img/about-big5.jpg" alt="Big5イメージ画像">
+        </div>
+      </div>
+      <div class="about__item">
+        <h3 class="item__title">他の人とつながる</h3>
+        <div class="item__title-line"></div>
+        <div class="item__desc">
+          <div class="desc__desc-wrapper">
+            <p class="desc__text">
+              診断結果から、今までSuitterが診断したアカウントの中であなたに近い性格のアカウントを表示できます。<br>
+              また、有名アカウントと自分の相性を調べることもできます。
+            </p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="item__img">
+          <img src="img/about-connect.jpg" alt="つながるイメージ画像">
+        </div>
+      </div>
+    </section>
+    <section class="qanda">
+      <div class="section-head">
+        <h2 class="section-head__title">Q&A</h2>
+        <p class="section-head__sub">よくある質問</p>
+      </div>
+      <div id="questions">
+        <div class="qanda__item">
+          <dt class="item__title">サービスへの登録は必要ですか？</dt>
+          <div class="item__toggle">
+            <div class="toggle__line"></div>
+            <div class="toggle__line"></div>
+          </div>
+          <dd class="item__text">当サービスをご利用する際に会員登録は必要ありません。</dd>
+        </div>
+        <div class="qanda__item">
+          <dt class="item__title">サービスの利用料金はかかりますか？</dt>
+          <div class="item__toggle">
+            <div class="toggle__line"></div>
+            <div class="toggle__line"></div>
+          </div>
+          <dd class="item__text">当サービスをご利用するに当たり、料金を請求することはございません。</dd>
+        </div>
+        <div class="qanda__item">
+          <dt class="item__title">個人情報の取り扱いが心配です。</dt>
+          <div class="item__toggle">
+            <div class="toggle__line"></div>
+            <div class="toggle__line"></div>
+          </div>
+          <dd class="item__text">
+            当サービスは暗号化されたSSL通信のもと、Twitter, IBM Watsonと通信した後にその結果だけを出力します。<br>
+            通常は通信中、また出力結果から個人情報が流出する恐れはございません。<br>
+            加えて、こちらがツイートの内容を分析以外に用いることはございません。詳しくは<a href="#">プライバシーポリシー</a>をご確認ください。<br>
+          </dd>
+        </div>
+      </div>
+      <a class="btn" href="#">Read more</a>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__scroll-up">
+      <a href="#">
+        <img src="img/arrow.svg" alt="トップへ戻る">
+        <p>Page top</p>
+      </a>
+    </div>
+    <div class="footer__footer-wrapper">
+      <div class="footer__main">
+        <h1 class="footer__title"><a href="index.html">Suitter</a></h1>
+        <ul class="footer__nav">
+          <li><a class="nav-link" href="#">会社概要</a></li>
+          <li><a class="nav-link" href="#">ご利用規約</a></li>
+          <li><a class="nav-link" href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <a class="btn" href="#">お問い合わせ</a>
+      <small>&copy; 2019 Kinetic think co.,ltd All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+</body>
+</html>
